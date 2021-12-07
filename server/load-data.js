@@ -4,7 +4,7 @@ require("dotenv").config();
 const fakerator = Fakerator("en-US");
 const teacherModel = require("./models/teacher");
 const studentModel = require("./models/students");
-
+console.log(process.env.ATLAS_DB)
 mongoose
 	.connect(process.env.ATLAS_DB, {
 		useNewUrlParser: true,
