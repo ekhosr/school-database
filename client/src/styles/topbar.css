@@ -1,0 +1,21 @@
+.topbar-card {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10%;
+    z-index: 999;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    margin: 0px;
+    vertical-align: top;
+}
+
+@media only screen and (max-width: 600px) {
+    .topbar-card{
+        width: 100vw;
+        margin: 0px;
+    }
+}
