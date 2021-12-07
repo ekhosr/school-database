@@ -3,11 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
+
+const full = window.location.protocol + '//' + window.location.host;
+
+const client = new ApolloClient({
+  uri: /localhost/.test(window.location) ? "http://localhost:8085/api" : full + "/api",
+  cache: new InMemoryCache()
+});
 
 ReactDOM.render(
+  <ApolloProvider client={client}>
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>
+  </ApolloProvider>,
   document.getElementById('root')
 );
 
