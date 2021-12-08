@@ -63,6 +63,10 @@ Using school database users can see teachers and students of a school. There wil
 - Install dependencies in client folder using `npm i`
 - Run the client using `npm run start`
 
+```md
+Note: for login, choose any of teachers email for username, and password is:'test'
+```
+
 
 ## <a id="usage"></a>Usage
 
